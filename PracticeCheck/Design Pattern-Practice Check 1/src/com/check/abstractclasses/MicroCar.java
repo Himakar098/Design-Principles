@@ -1,0 +1,16 @@
+package com.check.abstractclasses;
+
+import com.check.enums.CarType;
+import com.check.enums.Location;
+
+class MicroCar extends Car {
+	MicroCar(Location location) {
+		super(CarType.MICRO, location);
+		construct();
+	}
+
+	@Override
+	protected void construct() {
+		System.out.println("Connecting to Micro Car ");
+	}
+}
